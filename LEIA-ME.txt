@@ -1,0 +1,31 @@
+GD TRAINING — v1.0 (primeira versão para testes)
+
+PUBLICAÇÃO GRATUITA (GITHUB PAGES)
+1. Crie uma conta gratuita em https://github.com, se ainda não tiver.
+2. Crie um repositório público chamado gd-training (New repository > Public > Create repository).
+3. Extraia o ZIP. Dentro da pasta gd-training, selecione TODOS os arquivos. No GitHub, escolha Add file > Upload files. Envie os arquivos diretamente para a raiz do repositório (index.html deve aparecer na lista inicial, não dentro de outra pasta). Commit changes.
+4. Abra Settings > Pages > Build and deployment. Selecione Deploy from a branch, branch main, pasta / (root), e Save.
+5. Quando o GitHub concluir a publicação, copie o endereço informado na seção Pages. O formato usual é https://SEU-USUARIO.github.io/gd-training/. Use sempre esse mesmo endereço para preservar o armazenamento local.
+
+ANDROID: abra o endereço no Chrome, menu de três pontos > Instalar aplicativo ou Adicionar à tela inicial.
+IPHONE: abra pelo Safari, Compartilhar > Adicionar à Tela de Início. Se disponível, ative Abrir como app da web.
+Compartilhe o endereço publicado por WhatsApp; cada pessoa terá seus próprios registros. Não precisa de conta no ChatGPT.
+
+PRIMEIRO TESTE NO CELULAR
+- Abra pelo ícone instalado; crie um treino livre; adicione um exercício; marque uma série como feita; adicione cardio; selecione uma foto.
+- Feche e reabra pelo mesmo ícone e confira se o rascunho permaneceu.
+- Finalize, confira o calendário e a aba Evolução. Crie uma ficha e inicie outro treino para conferir o histórico de cargas.
+- Em Perfil, exporte um backup e guarde-o fora do navegador (Arquivos, Google Drive, etc.). A restauração substitui todos os dados atuais.
+- Depois da primeira abertura online, teste o aplicativo em modo avião. O service worker deverá guardar os arquivos necessários para uso offline.
+
+PRIVACIDADE E CUIDADOS
+O código do repositório público pode ser visto por qualquer pessoa; seus dados e fotos são locais, em IndexedDB, e não devem ser enviados ao GitHub. Não faça upload de backups ou fotos pessoais no repositório. O backup JSON inclui fotos e não é criptografado. Dados locais podem desaparecer se o navegador ou sistema apagar o armazenamento; faça backups frequentes. Não há sincronização entre dispositivos. O app funciona sem login. A câmera/galeria depende do seletor do sistema; fotos HEIC podem não ser aceitas em alguns navegadores, use JPG/PNG.
+
+PADRÃO DE CARGA
+Use carga total/máquina/unilateral ou por halter (par). No segundo caso, o volume é multiplicado por 2; os gráficos mostram o peso por halter. Apenas séries marcadas como realizadas entram nos cálculos. Cardio registra minutos, distância e calorias informadas. Peso corporal, academia e foto podem ficar em branco.
+
+TESTES E LIMITAÇÕES
+Código JavaScript validado; cálculos, geração de telas, fichas e estrutura do backup testados em Node. O ambiente de desenvolvimento bloqueou a navegação de teste no Chromium, portanto persistência, interface real, instalação, câmera e modo offline ainda precisam ser validados no dispositivo. Não é um APK nem um app da App Store: é um PWA. O pacote não está hospedado; é necessário publicar conforme as etapas acima. Não use como única cópia de dados importantes antes de validar o backup.
+
+ATUALIZAÇÕES
+Para publicar uma nova versão, substitua os arquivos do mesmo repositório/endereço e altere a versão de CACHE em sw.js. Faça backup antes de atualizar. Não apague os dados do site.
